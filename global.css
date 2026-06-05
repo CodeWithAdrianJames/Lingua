@@ -1,0 +1,161 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "nativewind/theme";
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@theme {
+  --color-lingua-purple: #6c4ef5;
+  --color-lingua-deep-purple: #5b3bf6;
+  --color-lingua-blue: #4d8bff;
+  --color-lingua-green: #21c16b;
+  --color-lingua-success: #21c16b;
+  --color-lingua-warning: #ffc800;
+  --color-lingua-streak: #ff8a00;
+  --color-lingua-error: #ff4d4f;
+  --color-lingua-info: #4d8bff;
+  --color-lingua-text-primary: #0d132b;
+  --color-lingua-text-secondary: #6b7280;
+  --color-lingua-border: #e5e7eb;
+  --color-lingua-surface: #f6f7fb;
+  --color-lingua-background: #ffffff;
+
+  --font-poppins: Poppins-Regular;
+  --font-poppins-regular: Poppins-Regular;
+  --font-poppins-medium: Poppins-Medium;
+  --font-poppins-semibold: Poppins-SemiBold;
+  --font-poppins-bold: Poppins-Bold;
+
+  --radius-lingua-card: 12px;
+  --radius-lingua-swatch: 8px;
+  --radius-lingua-sheet: 16px;
+}
+
+:root {
+  --font-sans: Poppins-Regular;
+  --font-poppins: Poppins-Regular;
+  --font-poppins-regular: Poppins-Regular;
+  --font-poppins-medium: Poppins-Medium;
+  --font-poppins-semibold: Poppins-SemiBold;
+  --font-poppins-bold: Poppins-Bold;
+}
+
+@utility font-poppins {
+  font-family: var(--font-poppins);
+}
+
+@utility text-brand-title {
+  color: var(--color-lingua-text-primary);
+  font-family: var(--font-poppins-bold);
+  font-size: 48px;
+  line-height: 58px;
+}
+
+@utility text-h1 {
+  color: var(--color-lingua-text-primary);
+  font-family: var(--font-poppins-bold);
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+@utility text-h2 {
+  color: var(--color-lingua-text-primary);
+  font-family: var(--font-poppins-semibold);
+  font-size: 24px;
+  line-height: 31.2px;
+}
+
+@utility text-h3 {
+  color: var(--color-lingua-text-primary);
+  font-family: var(--font-poppins-semibold);
+  font-size: 20px;
+  line-height: 26px;
+}
+
+@utility text-h4 {
+  color: var(--color-lingua-text-primary);
+  font-family: var(--font-poppins-medium);
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+@utility text-body-lg {
+  color: var(--color-lingua-text-primary);
+  font-family: var(--font-poppins-regular);
+  font-size: 16px;
+  line-height: 25.6px;
+}
+
+@utility text-body-md {
+  color: var(--color-lingua-text-primary);
+  font-family: var(--font-poppins-regular);
+  font-size: 14px;
+  line-height: 22.4px;
+}
+
+@utility text-body-sm {
+  color: var(--color-lingua-text-secondary);
+  font-family: var(--font-poppins-regular);
+  font-size: 13px;
+  line-height: 20.8px;
+}
+
+@utility text-caption {
+  color: var(--color-lingua-text-secondary);
+  font-family: var(--font-poppins-regular);
+  font-size: 11px;
+  line-height: 15.4px;
+}
+
+@utility text-section-label {
+  color: var(--color-lingua-deep-purple);
+  font-family: var(--font-poppins-semibold);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@utility text-token-label {
+  color: var(--color-lingua-text-secondary);
+  font-family: var(--font-poppins-semibold);
+  font-size: 12px;
+  line-height: 16.8px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+@utility text-token-value {
+  color: var(--color-lingua-text-secondary);
+  font-family: var(--font-poppins-regular);
+  font-size: 12px;
+  line-height: 16.8px;
+}
+
+@utility ds-page {
+  background-color: var(--color-lingua-background);
+  flex: 1;
+}
+
+@utility ds-card {
+  background-color: var(--color-lingua-background);
+  border-color: var(--color-lingua-border);
+  border-radius: var(--radius-lingua-card);
+  border-width: 1px;
+}
+
+@utility ds-divider {
+  background-color: var(--color-lingua-border);
+  height: 1px;
+}
+
+@utility ds-swatch {
+  border-radius: var(--radius-lingua-swatch);
+  height: 82px;
+  width: 108px;
+}
+
+@utility ds-swatch-sm {
+  border-radius: var(--radius-lingua-swatch);
+  height: 82px;
+  width: 82px;
+}
