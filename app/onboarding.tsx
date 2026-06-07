@@ -70,7 +70,7 @@ export default function OnboardingScreen() {
 
       {/* Get Started button */}
       <Pressable
-        onPress={() => router.push("/")}
+        onPress={() => router.push("/sign-up")}
         className="bg-lingua-purple rounded-full py-4 flex-row items-center justify-center gap-2 mb-8"
       >
         <Text className="text-white text-h3 font-poppins-bold">Get Started</Text>
